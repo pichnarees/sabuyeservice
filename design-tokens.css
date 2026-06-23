@@ -1,0 +1,374 @@
+/**
+ * PEA Solar Request System - Design Tokens
+ * Version: 1.0.0
+ * 
+ * This file contains all design tokens used in the PEA solar installation
+ * request tracking application. Import this file to use these tokens
+ * in other projects.
+ */
+
+:root {
+  /* ========================================
+     BRAND COLORS
+     ======================================== */
+  
+  --color-brand-primary: #8E0369;
+  --color-brand-primary-hover: #7A0359;
+  --color-brand-primary-light: #A80589;
+
+  /* ========================================
+     STATUS COLORS
+     ======================================== */
+  
+  /* Success Status */
+  --color-status-success-bg: #ECFEF3;
+  --color-status-success-text: #079455;
+  --color-status-success-border: #C3F4D6;
+
+  /* Cancelled Status */
+  --color-status-cancelled-bg: #F4F4F4;
+  --color-status-cancelled-text: #5E5E5E;
+  --color-status-cancelled-border: #EAECF0;
+
+  /* Error/Rejected Status */
+  --color-status-error-bg: #FEF2F2;
+  --color-status-error-text: #DC2626;
+  --color-status-error-border: #FECACA;
+
+  /* In Progress Status */
+  --color-status-progress-bg: #EFF8FF;
+  --color-status-progress-text: #175CD3;
+  --color-status-progress-border: #B2DDFF;
+
+  /* Waiting Status */
+  --color-status-waiting-bg: #FFFAEB;
+  --color-status-waiting-text: #DC6803;
+  --color-status-waiting-border: #FEDF89;
+
+  /* ========================================
+     NEUTRAL COLORS
+     ======================================== */
+  
+  /* Background */
+  --color-bg-page: #FAFBFC;
+  --color-bg-card: #FFFFFF;
+  --color-bg-section: #F2F4F7;
+  --color-bg-hover: #F9FAFB;
+
+  /* Text */
+  --color-text-primary: #424957;
+  --color-text-secondary: #6A7282;
+  --color-text-tertiary: #99A1AF;
+  --color-text-heading: #1E1E1E;
+
+  /* Border */
+  --color-border-default: #E0E4EC;
+  --color-border-light: #E9EAEC;
+  --color-border-medium: #DEE2E6;
+  --color-border-dark: #D0D0D0;
+
+  /* ========================================
+     SEMANTIC COLORS
+     ======================================== */
+  
+  --color-destructive: #DC2626;
+  --color-warning: #DC6803;
+  --color-info: #175CD3;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+  
+  /* Font Family */
+  --font-family-primary: 'IBM Plex Sans Thai', sans-serif;
+
+  /* Font Sizes */
+  --font-size-h1: 30px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --font-size-label: 12px;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-normal: normal;
+  --line-height-relaxed: 1.5;
+
+  /* ========================================
+     SPACING
+     ======================================== */
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 28px;
+  --spacing-4xl: 32px;
+  --spacing-5xl: 40px;
+  --spacing-6xl: 60px;
+
+  /* Component Specific Spacing */
+  --spacing-button-horizontal: 16px;
+  --spacing-button-vertical: 12px;
+  --spacing-card: 20px;
+  --spacing-section: 28px;
+  --spacing-input: 12px;
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Component Specific Radius */
+  --radius-button: 8px;
+  --radius-card: 20px;
+  --radius-section: 16px;
+  --radius-badge: 40px;
+
+  /* ========================================
+     COMPONENT DIMENSIONS
+     ======================================== */
+  
+  /* Badge */
+  --badge-width: 54px;
+  --badge-height: 22px;
+
+  /* Header */
+  --header-height: 74px;
+
+  /* Progress Stepper */
+  --progress-stepper-height: 73px;
+  --progress-step-circle-size: 34px;
+
+  /* Container */
+  --container-max-width: 1440px;
+  --container-padding: 28px;
+  --container-margin-horizontal: 40px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+  
+  --shadow-card: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-modal: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-button: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+  
+  --z-index-header: 10;
+  --z-index-sticky: 20;
+  --z-index-dropdown: 30;
+  --z-index-modal-backdrop: 40;
+  --z-index-modal: 50;
+  --z-index-toast: 60;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Typography Utilities */
+.text-h1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-normal);
+}
+
+.text-h2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-normal);
+}
+
+.text-h3 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-normal);
+}
+
+.text-body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+.text-small {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+.text-label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Button Utilities */
+.btn-primary {
+  background-color: var(--color-brand-primary);
+  color: white;
+  padding: var(--spacing-button-vertical) var(--spacing-4xl);
+  border-radius: var(--radius-button);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-primary-hover);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--color-brand-primary);
+  padding: var(--spacing-button-vertical) var(--spacing-4xl);
+  border-radius: var(--radius-button);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  border: 1px solid var(--color-brand-primary);
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(142, 3, 105, 0.05);
+}
+
+/* Card Utilities */
+.card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-section);
+  box-shadow: var(--shadow-card);
+}
+
+.card-section {
+  background-color: var(--color-bg-section);
+  border-radius: var(--radius-section);
+  padding: var(--spacing-lg);
+}
+
+/* Status Badge Utilities */
+.badge-success {
+  background-color: var(--color-status-success-bg);
+  color: var(--color-status-success-text);
+  border: 1px solid var(--color-status-success-border);
+  padding: 5px 10px;
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-primary);
+}
+
+.badge-cancelled {
+  background-color: var(--color-status-cancelled-bg);
+  color: var(--color-status-cancelled-text);
+  border: 1px solid var(--color-status-cancelled-border);
+  padding: 5px 10px;
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-primary);
+}
+
+.badge-error {
+  background-color: var(--color-status-error-bg);
+  color: var(--color-status-error-text);
+  border: 1px solid var(--color-status-error-border);
+  padding: 5px 10px;
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-primary);
+}
+
+.badge-progress {
+  background-color: var(--color-status-progress-bg);
+  color: var(--color-status-progress-text);
+  border: 1px solid var(--color-status-progress-border);
+  padding: 5px 10px;
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-primary);
+}
+
+.badge-waiting {
+  background-color: var(--color-status-waiting-bg);
+  color: var(--color-status-waiting-text);
+  border: 1px solid var(--color-status-waiting-border);
+  padding: 5px 10px;
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-primary);
+}
+
+/* ========================================
+   USAGE EXAMPLES
+   ======================================== */
+
+/*
+Example 1: Using CSS Variables
+-------------------------------
+.my-custom-button {
+  background-color: var(--color-brand-primary);
+  color: white;
+  padding: var(--spacing-button-vertical) var(--spacing-button-horizontal);
+  border-radius: var(--radius-button);
+  font-family: var(--font-family-primary);
+}
+
+Example 2: Using Utility Classes
+---------------------------------
+<h1 class="text-h1">หัวข้อหลัก</h1>
+<button class="btn-primary">ยืนยัน</button>
+<div class="card">Card Content</div>
+<span class="badge-success">สำเร็จ</span>
+
+Example 3: Custom Implementation
+---------------------------------
+.my-status-indicator {
+  background: var(--color-status-success-bg);
+  color: var(--color-status-success-text);
+  border: 1px solid var(--color-status-success-border);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-label);
+}
+*/

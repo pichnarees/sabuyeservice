@@ -1,0 +1,6 @@
+{
+  "name": "Sabuy e-Service",
+  "description": "ระบบติดตามสถานะการดำเนินงานของคำร้อง เช่น การติดตั้งโซลาร์เซลล์ ความสะดวกในการจ่ายเงิน และการติดตามเอกสาร (Sabuy Make)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,561 @@
+{
+  "designSystem": {
+    "name": "PEA Solar Request System",
+    "version": "1.0.0",
+    "description": "Design system for PEA solar installation request tracking application",
+    
+    "colors": {
+      "brand": {
+        "primary": {
+          "default": "#8E0369",
+          "hover": "#7A0359",
+          "light": "#A80589",
+          "description": "สีหลักของระบบ PEA (สีม่วงแดง)"
+        }
+      },
+      
+      "status": {
+        "success": {
+          "background": "#ECFEF3",
+          "text": "#079455",
+          "border": "#C3F4D6",
+          "description": "สถานะดำเนินการสำเร็จ"
+        },
+        "cancelled": {
+          "background": "#F4F4F4",
+          "text": "#5E5E5E",
+          "border": "#EAECF0",
+          "description": "สถานะยกเลิก (สีเทา)"
+        },
+        "error": {
+          "background": "#FEF2F2",
+          "text": "#DC2626",
+          "border": "#FECACA",
+          "description": "สถานะข้อผิดพลาดหรือปฏิเสธ"
+        },
+        "inProgress": {
+          "background": "#EFF8FF",
+          "text": "#175CD3",
+          "border": "#B2DDFF",
+          "description": "สถานะกำลังดำเนินการ"
+        },
+        "waiting": {
+          "background": "#FFFAEB",
+          "text": "#DC6803",
+          "border": "#FEDF89",
+          "description": "สถานะรอดำเนินการ"
+        }
+      },
+      
+      "neutral": {
+        "background": {
+          "page": "#FAFBFC",
+          "card": "#FFFFFF",
+          "section": "#F2F4F7",
+          "hover": "#F9FAFB"
+        },
+        "text": {
+          "primary": "#424957",
+          "secondary": "#6A7282",
+          "tertiary": "#99A1AF",
+          "heading": "#1E1E1E"
+        },
+        "border": {
+          "default": "#E0E4EC",
+          "light": "#E9EAEC",
+          "medium": "#DEE2E6",
+          "dark": "#D0D0D0"
+        }
+      },
+      
+      "semantic": {
+        "destructive": "#DC2626",
+        "warning": "#DC6803",
+        "info": "#175CD3"
+      }
+    },
+    
+    "typography": {
+      "fontFamily": {
+        "primary": "IBM Plex Sans Thai",
+        "fallback": "sans-serif",
+        "usage": "ใช้สำหรับทุกส่วนของระบบ"
+      },
+      
+      "fontSize": {
+        "h1": {
+          "size": "30px",
+          "lineHeight": "normal",
+          "fontWeight": "700",
+          "usage": "หัวข้อหลัก เช่น หมายเลขคำร้อง"
+        },
+        "h2": {
+          "size": "24px",
+          "lineHeight": "normal",
+          "fontWeight": "700",
+          "usage": "หัวข้อรอง เช่น ชื่อหน้า"
+        },
+        "h3": {
+          "size": "20px",
+          "lineHeight": "normal",
+          "fontWeight": "700",
+          "usage": "หัวข้อส่วนย่อย"
+        },
+        "body": {
+          "size": "16px",
+          "lineHeight": "1.5",
+          "fontWeight": "400",
+          "usage": "ข้อความทั่วไป"
+        },
+        "bodyBold": {
+          "size": "16px",
+          "lineHeight": "1.5",
+          "fontWeight": "600",
+          "usage": "ข้อความเน้น"
+        },
+        "small": {
+          "size": "14px",
+          "lineHeight": "1.5",
+          "fontWeight": "400",
+          "usage": "ข้อความขนาดเล็ก, ปุ่ม"
+        },
+        "label": {
+          "size": "12px",
+          "lineHeight": "1.5",
+          "fontWeight": "400",
+          "usage": "ป้ายกำกับ, หัวตาราง"
+        }
+      },
+      
+      "fontWeight": {
+        "normal": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700"
+      }
+    },
+    
+    "spacing": {
+      "scale": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "28px",
+        "4xl": "32px",
+        "5xl": "40px",
+        "6xl": "60px"
+      },
+      
+      "component": {
+        "buttonPadding": {
+          "horizontal": "16px",
+          "vertical": "12px"
+        },
+        "cardPadding": "20px",
+        "sectionPadding": "28px",
+        "inputPadding": "12px"
+      }
+    },
+    
+    "borderRadius": {
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "full": "9999px",
+      "usage": {
+        "button": "8px",
+        "card": "20px",
+        "section": "16px",
+        "badge": "40px"
+      }
+    },
+    
+    "components": {
+      "badge": {
+        "variants": [
+          {
+            "name": "Status-100-48 (สำเร็จ - Success)",
+            "component": "Status-100-48",
+            "size": {
+              "width": "54px",
+              "height": "22px"
+            },
+            "colors": {
+              "background": "#ECFEF3",
+              "text": "#079455",
+              "border": "#C3F4D6"
+            },
+            "usage": "ใช้สำหรับสถานะดำเนินการสำเร็จ"
+          },
+          {
+            "name": "Status-100-55 (กำลังดำเนินการ - In Progress)",
+            "component": "Status-100-55",
+            "size": {
+              "width": "54px",
+              "height": "22px"
+            },
+            "colors": {
+              "background": "#EFF8FF",
+              "text": "#175CD3",
+              "border": "#B2DDFF"
+            },
+            "usage": "ใช้สำหรับสถานะกำลังดำเนินการ"
+          },
+          {
+            "name": "Status-100-62 (รอดำเนินการ - Waiting)",
+            "component": "Status-100-62",
+            "size": {
+              "width": "54px",
+              "height": "22px"
+            },
+            "colors": {
+              "background": "#FFFAEB",
+              "text": "#DC6803",
+              "border": "#FEDF89"
+            },
+            "usage": "ใช้สำหรับสถานะรอดำเนินการ"
+          },
+          {
+            "name": "Status-100-69 (ปฏิเสธ - Rejected)",
+            "component": "Status-100-69",
+            "size": {
+              "width": "54px",
+              "height": "22px"
+            },
+            "colors": {
+              "background": "#FEF2F2",
+              "text": "#DC2626",
+              "border": "#FECACA"
+            },
+            "usage": "ใช้สำหรับสถานะปฏิเสธหรือข้อผิดพลาด"
+          },
+          {
+            "name": "Status-104-374 (ยกเลิก - Cancelled)",
+            "component": "Status-104-374",
+            "size": {
+              "width": "54px",
+              "height": "22px"
+            },
+            "colors": {
+              "background": "#F4F4F4",
+              "text": "#5E5E5E",
+              "border": "#EAECF0"
+            },
+            "usage": "ใช้สำหรับสถานะยกเลิก"
+          }
+        ],
+        
+        "implementation": {
+          "import": "import Status from '../../imports/Status-[variant]'",
+          "usage": "<div className=\"w-[54px] h-[22px]\"><StatusComponent /></div>",
+          "note": "ต้องระบุขนาดคงที่เพื่อให้แสดงผลถูกต้อง"
+        }
+      },
+      
+      "button": {
+        "variants": {
+          "primary": {
+            "background": "#8E0369",
+            "backgroundHover": "#7A0359",
+            "text": "#FFFFFF",
+            "border": "none",
+            "borderRadius": "8px",
+            "padding": {
+              "horizontal": "32px",
+              "vertical": "12px"
+            },
+            "fontSize": "14px",
+            "fontWeight": "700"
+          },
+          "secondary": {
+            "background": "#FFFFFF",
+            "backgroundHover": "rgba(142, 3, 105, 0.05)",
+            "text": "#8E0369",
+            "border": "1px solid #8E0369",
+            "borderRadius": "8px",
+            "padding": {
+              "horizontal": "32px",
+              "vertical": "12px"
+            },
+            "fontSize": "14px",
+            "fontWeight": "700"
+          },
+          "tertiary": {
+            "background": "#FFFFFF",
+            "backgroundHover": "#F9FAFB",
+            "text": "#424957",
+            "border": "1px solid #DEE2E6",
+            "borderRadius": "8px",
+            "padding": {
+              "horizontal": "16px",
+              "vertical": "8px"
+            },
+            "fontSize": "14px",
+            "fontWeight": "600"
+          },
+          "action": {
+            "background": "#A80589",
+            "backgroundHover": "#7A0359",
+            "text": "#FFFFFF",
+            "border": "none",
+            "borderRadius": "8px",
+            "padding": {
+              "horizontal": "16px",
+              "vertical": "8px"
+            },
+            "fontSize": "14px",
+            "fontWeight": "700"
+          }
+        }
+      },
+      
+      "card": {
+        "default": {
+          "background": "#FFFFFF",
+          "borderRadius": "20px",
+          "border": "none",
+          "shadow": "0px 4px 12px rgba(0, 0, 0, 0.08)",
+          "padding": "28px"
+        },
+        "section": {
+          "background": "#F2F4F7",
+          "borderRadius": "16px",
+          "border": "none",
+          "padding": "16px"
+        }
+      },
+      
+      "progressStepper": {
+        "height": "73px",
+        "border": "1px solid #E6EAEE",
+        "borderRadius": "8px",
+        "divider": {
+          "color": "#E6EAEE",
+          "width": "1px"
+        },
+        "step": {
+          "completed": {
+            "circleBackground": "#A80589",
+            "circleSize": "34px",
+            "textColor": "#424957",
+            "textWeight": "700",
+            "iconColor": "#FFFFFF"
+          },
+          "current": {
+            "circleBackground": "#8E0369",
+            "circleSize": "34px",
+            "textColor": "#8E0369",
+            "textWeight": "600"
+          },
+          "cancelled": {
+            "circleBackground": "#DC2626",
+            "circleSize": "34px",
+            "textColor": "#DC2626",
+            "textWeight": "600",
+            "iconColor": "#FFFFFF"
+          },
+          "disabled": {
+            "circleBorder": "1.889px solid #99A1AF",
+            "circleSize": "34px",
+            "textColor": "#99A1AF",
+            "textWeight": "600"
+          }
+        }
+      },
+      
+      "table": {
+        "header": {
+          "background": "#F9FAFB",
+          "textColor": "#424957",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "padding": {
+            "horizontal": "20px",
+            "vertical": "12px"
+          }
+        },
+        "row": {
+          "background": "#FFFFFF",
+          "backgroundHover": "#F9FAFB",
+          "textColor": "#424957",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "border": "1px solid #E0E4EC",
+          "padding": {
+            "horizontal": "20px",
+            "vertical": "16px"
+          }
+        }
+      },
+      
+      "input": {
+        "default": {
+          "background": "#FFFFFF",
+          "border": "1px solid #D0D0D0",
+          "borderRadius": "8px",
+          "padding": "12px",
+          "fontSize": "16px",
+          "textColor": "#424957",
+          "placeholderColor": "#99A1AF"
+        },
+        "focus": {
+          "border": "1px solid #8E0369",
+          "outline": "none"
+        }
+      },
+      
+      "modal": {
+        "overlay": {
+          "background": "rgba(0, 0, 0, 0.5)"
+        },
+        "container": {
+          "background": "#FFFFFF",
+          "borderRadius": "20px",
+          "maxWidth": "800px",
+          "maxHeight": "90vh",
+          "overflow": "auto"
+        },
+        "header": {
+          "padding": {
+            "horizontal": "32px",
+            "vertical": "24px"
+          },
+          "borderBottom": "1px solid #E0E4EC",
+          "fontSize": "24px",
+          "fontWeight": "700"
+        },
+        "content": {
+          "padding": {
+            "horizontal": "32px",
+            "vertical": "24px"
+          }
+        }
+      }
+    },
+    
+    "layout": {
+      "header": {
+        "height": "74px",
+        "background": "#FFFFFF",
+        "borderBottom": "1px solid #E9EAEC",
+        "padding": {
+          "horizontal": "156px"
+        }
+      },
+      
+      "container": {
+        "maxWidth": "1440px",
+        "padding": "28px",
+        "margin": {
+          "horizontal": "40px",
+          "top": "-10px",
+          "bottom": "60px"
+        }
+      },
+      
+      "grid": {
+        "gap": {
+          "sm": "12px",
+          "md": "20px",
+          "lg": "28px"
+        },
+        "columns": {
+          "2": "grid-cols-2",
+          "3": "grid-cols-3",
+          "4": "grid-cols-4"
+        }
+      }
+    },
+    
+    "paymentTimeline": {
+      "description": "ระบบแสดงการชำระเงิน 3 งวด",
+      "installments": 3,
+      "amountFormat": "จำนวนเต็มไม่มีทศนิยม",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "งวดที่ 1",
+          "description": "ชำระเงินมัดจำ",
+          "percentage": "30-40%",
+          "timing": "เมื่อเซ็นสัญญา"
+        },
+        {
+          "stage": 2,
+          "name": "งวดที่ 2",
+          "description": "ชำระเงินระหว่างติดตั้ง",
+          "percentage": "30-40%",
+          "timing": "เมื่อเริ่มติดตั้ง"
+        },
+        {
+          "stage": 3,
+          "name": "งวดที่ 3",
+          "description": "ชำระเงินส่วนที่เหลือ",
+          "percentage": "20-40%",
+          "timing": "เมื่อติดตั้งเสร็จสมบูรณ์"
+        }
+      ]
+    },
+    
+    "implementation": {
+      "css": {
+        "framework": "Tailwind CSS v4",
+        "themeFile": "/src/styles/theme.css",
+        "customClasses": "ใช้ inline Tailwind classes และ CSS variables จาก theme.css"
+      },
+      
+      "react": {
+        "framework": "React 18+",
+        "router": "react-router v7",
+        "stateManagement": "React Hooks (useState, useParams, useNavigate)"
+      },
+      
+      "figmaComponents": {
+        "location": "/src/imports/",
+        "statusBadges": [
+          "Status-100-48.tsx",
+          "Status-100-55.tsx",
+          "Status-100-62.tsx",
+          "Status-100-69.tsx",
+          "Status-104-374.tsx"
+        ],
+        "usage": "Import และใช้ components จาก Figma โดยตรง ไม่ใช้ custom badge"
+      }
+    },
+    
+    "guidelines": {
+      "accessibility": {
+        "contrast": "ตรวจสอบ contrast ratio สำหรับข้อความและพื้นหลังให้ผ่าน WCAG AA",
+        "focusIndicators": "แสดง focus indicator ชัดเจนสำหรับปุ่มและลิงก์",
+        "semanticHTML": "ใช้ semantic HTML elements (header, main, button, etc.)"
+      },
+      
+      "responsive": {
+        "breakpoints": {
+          "mobile": "< 768px",
+          "tablet": "768px - 1024px",
+          "desktop": "> 1024px"
+        },
+        "approach": "Desktop-first design แต่สามารถปรับให้ responsive ได้"
+      },
+      
+      "naming": {
+        "components": "PascalCase (e.g., RequestDetailScenario1)",
+        "functions": "camelCase (e.g., handleSubmit)",
+        "constants": "UPPER_SNAKE_CASE (e.g., MAX_FILE_SIZE)",
+        "css": "kebab-case (e.g., button-primary)"
+      },
+      
+      "fileStructure": {
+        "pages": "/src/app/pages/",
+        "components": "/src/app/components/",
+        "data": "/src/app/data/",
+        "styles": "/src/styles/",
+        "imports": "/src/imports/"
+      }
+    }
+  }
+}
